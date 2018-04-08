@@ -31,7 +31,6 @@ a {
 
 
 a:link {
-    color: green;
     text-decoration: none;
 }
 
@@ -52,6 +51,8 @@ a:active {
     color: green;
     text-decoration: none;
 }
+
+
 
 .yellow {
   background-image: url("./images/home_header2.png");
@@ -87,12 +88,45 @@ a:active {
   height: 400px;
   text-align: center;
   background-color:
+
 }
 
 .container1 {
   display: flex;
   margin-top: 5%;
   justify-content: space-around;
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #345995;
+}
+
+.container2:hover .overlay {
+  opacity: 1;
+}
+
+.view_image:hover .overlay {
+  opacity: 1;
 }
 
 .inner-container {
@@ -120,6 +154,7 @@ a:active {
 }
 
 .view_image {
+
 
 }
 
